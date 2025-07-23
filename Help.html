@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicMart - Help Page</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, Black, rgb(23, 0, 61));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px 20px 40px 20px;
+            background-color: #8f8f8f;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            color: #303030;
+            margin-bottom: 40px;
+        }
+
+        .help-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .help-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .help-card h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .help-card p {
+            font-size: 16px;
+            color: #555555;
+        }
+
+        .help-card a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .help-card i {
+            font-size: 24px;
+            margin-top: 10px;
+            color: rgb(0, 102, 51);
+        }
+
+        @media (max-width: 768px) {
+            .help-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>How can we help you?</h1>
+        <p class="intro-text">
+            "Welcome to our help page! Find answers to common questions, troubleshooting tips, and resources to help you navigate our online store. Need help with payment, tracking, or returns? We've got you covered. Browse our topics, search for answers, or contact our support team - we're here to help!"
+        </p>
+        <div class="help-section">
+            <div class="help-card">
+                <div><h2>Our Main Office</h2>
+                    <p>Dwarka <br>
+                        Town in Gujarat
+                    </p></div>
+                    <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="help-card">
+                <div><h2>Phone Number</h2>
+                <p>Rakesh - <a href="https://wa.me/7063616775" target="_blank">7063616775</a><br>Debasis - <a href="https://wa.me/8250458239" target="_blank">8250458239</a></p></div>
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="help-card">
+                <div><h2>Fax</h2>
+                <p>1-234-567-8900</p></div>
+                <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="help-card">
+                <div><h2>Email</h2>
+                <p><a href="mailto:deyrakesh909@gmail.com">deyrakesh909@gmail.com</a></p>
+                <p><a href="mailto:debasis.098876@gmail.com">debasis.098876@gmail.com</a></p></div>
+                <i class="fa-solid fa-envelope-circle-check"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

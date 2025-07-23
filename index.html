@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicMart - Online Shopping Website</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="EpicMart_RPS.css">
+
+
+</head>
+
+<body>
+    <!-- ********************* Navigation Bar ******************** -->
+    <nav class="nav-bar">
+        <div class="nav-bar-left">
+            <div class="logoo">
+                <img src="Images/logo.jpg" alt="Logo">
+                <span class="nav-bar-name">
+                    EpicMart</span>
+            </div>
+            <div class="input_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" class="nav-bar-search" placeholder="Search...">
+            </div>
+        </div>
+        <div class="nav-bar-right">
+            <a href="#home"><button class="nav-bar-Home"><i id="home-icon" class="fa-solid fa-house"></i>
+                    Home</button></a>
+                    <a href="Cart.html" target="_blank" style="text-decoration: none;"><div class="nav-bar-cart-logo"><i class="fa-brands fa-opencart"></i></div></a>
+            <a href="Login.html" target="_blank"><button class="nav-bar-login"> <i id="login-icon"
+                        class="fa-solid fa-user"></i> Login</button></a>
+            <button class="nav-bar-three-dots"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav-bar-three-dots-sidebar">
+                <div class="nav-bar-three-dots-sidebar-header">
+                    <span>Menu</span>
+                    <button class="nav-bar-three-dots-sidebar-close">×</button>
+                </div>
+                <ul>
+                    <li class="search-Engine">
+                        <div class="input_icon" id="input-toggle"><i class="fa-solid fa-magnifying-glass"></i><input
+                                type="search" class="nav-bar-search" id="nav-bar-search" placeholder="Search..."></div>
+                    </li>
+                    <li class="home"><a href="#home">Home <i id="home-icon" class="fa-solid fa-house"></i></a></li>
+                    <li class="cart"><a href="Cart.html" target="_blank">Cart <i class="fa-brands fa-opencart"></i></a></li>
+                    <li class="login"><a href="Login.html" target="_blank">Login <i id="login-icon" class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#" id="theme">Theme <i class="fa-solid fa-sun" id="theme-icon"></i></a></li>
+                    <li><a href="Account.html" target="_blank">Account <i class="fa-solid fa-id-card-clip"></i></a></li>
+                    <li><a href="About.html" target="_blank">About <i class="fa-solid fa-address-card"></i></a></li>
+                    <li><a href="Help.html" target="_blank">Help <i class="fa-solid fa-helicopter-symbol"></i></a></li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ************* 2nd Nav Bar ***************** -->
+
+    <div class="nav_bar_2nd" id="home">
+        <a href="#all"><button>All <i class="fa-solid fa-arrow-right-long"></i></button></a>
+        <a href="Hyperlink/laptop.html" target="_blank"><button>Laptop <i class="fa-solid fa-laptop"></i></button></a>
+        <a href="Hyperlink/mobile.html" target="_blank"><button>Mobile <i class="fa-solid fa-mobile"></i></button></a>
+        <a href="Hyperlink/monitor.html" target="_blank"><button>Monitor <i class="fa-solid fa-tv"></i></button></a>
+        <a href="Hyperlink/headandspeaker.html" target="_blank"><button>Speaker <i class="fa-solid fa-volume-low"></i></button></a>
+        <a href="Hyperlink/headandspeaker.html" target="_blank"><button>Headphones <i class="fa-solid fa-headphones"></i></button></a>
+        <a href="Hyperlink/watch.html" target="_blank"><button>Watch <i class="fa-solid fa-clock"></i></button></a>
+        <a href="Hyperlink/fashion.html" target="_blank"><button>Fashion <i class="fa-solid fa-shirt"></i></button></a>
+        <a href="Hyperlink/gift.html" target="_blank"><button>Gifts <i class="fa-solid fa-gift"></i></button></a>
+        <a href="Hyperlink/plants.html" target="_blank"><button>Plants <i class="fa-solid fa-seedling"></i></button></a>
+    </div>
+
+
+    <!-- *************** Image Slider ********************* -->
+
+    <div class="slidercontainer">
+        <div class="showSlide active">
+            <img src="Images/banner1.jpg" />
+            <!-- <div class="content">Slide1 heading</div> -->
+        </div>
+        <div class="showSlide">
+            <img src="Images/banner2.jpg" />
+            <!-- <div class="content">Slide2 heading</div> -->
+        </div>
+        <div class="showSlide">
+            <img src="Images/banner5.webp" />
+            <!-- <div class="content">Slide3 heading</div> -->
+        </div>
+        <div class="showSlide">
+            <img src="Images/banner3.webp" />
+            <!-- <div class="content">Slide4 heading</div> -->
+        </div>
+        <div class="showSlide">
+            <img src="Images/banner4.webp" />
+            <!-- <div class="content">Slide4 heading</div> -->
+        </div>
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">&#10094;</a>
+        <a class="right" onclick="nextSlide(1)">&#10095;</a>
+    </div>
+
+
+    <!-- **************** Category Wise Section ******************* -->
+    <div class="body-part2">
+        <div class="box" data-name="Laptop desktop">
+            <div class="content-box">
+                <h2 style="color: rgb(243, 97, 0);">Best Laptops &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <span
+                        style="color: rgb(243, 97, 0);">70% Off</span>
+                </h2>
+                <div class="image" style="background-image: url('Images/laptop1.jpg');"></div>
+                <a href="Hyperlink/laptop.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Mobile">
+            <div class="content-box">
+                <h2 style="color: #002bff;">Best Mobiles &nbsp; &nbsp; <span style="color: #002bff;">Under 50K</span>
+                </h2>
+                <div class="image" style="background-image: url('Images/Mobile.jpeg');"></div>
+                <a href="Hyperlink/mobile.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Watch">
+            <div class="content-box">
+                <h2 style="color: rgb(20, 136, 5);">Best Watch &nbsp; &nbsp;<span style="color: rgb(20, 136, 5);">Live
+                        Offer</span></h2>
+                <div class="image" style="background-image: url('Images/Watch.jpg');"></div>
+                <a href="Hyperlink/watch.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Monitor desktop">
+            <div class="content-box">
+                <h2 style="color: rgb(243, 97, 0);">Best Monitors &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <span
+                        style="color: rgb(243, 97, 0);">70% Off</span>
+                </h2>
+                <div class="image" style="background-image: url('Images/Minitor.jpg');"></div>
+                <a href="Hyperlink/monitor.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Speaker">
+            <div class="content-box">
+                <h2 style="color: #002bff;">Best Speakers &nbsp; &nbsp; <span style="color: #002bff;">Under 50K</span>
+                </h2>
+                <div class="image" style="background-image: url('Images/Speaker.webp');"></div>
+                <a href="Hyperlink/headandspeaker.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Headphone">
+            <div class="content-box">
+                <h2 style="color: rgb(20, 136, 5);">Best Headphones &nbsp; &nbsp;<span
+                        style="color: rgb(20, 136, 5);">Live
+                        Offer</span></h2>
+                <div class="image" style="background-image: url('Images/headphone.jpg');"></div>
+                <a href="Hyperlink/headandspeaker.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Fashion">
+            <div class="content-box">
+                <h2 style="color: rgb(243, 97, 0);">Check Fashion &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <span
+                        style="color: rgb(243, 97, 0);">70% Off</span>
+                </h2>
+                <div class="image" style="background-image: url('Images/Cloths.jpg');"></div>
+                <a href="Hyperlink/fashion.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Gifts">
+            <div class="content-box">
+                <h2 style="color: #002bff;">Check Gifts &nbsp; &nbsp; <span style="color: #002bff;">Under 50K</span>
+                </h2>
+                <div class="image" style="background-image: url('Images/Gift.jpg');"></div>
+                <a href="Hyperlink/gift.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+        <div class="box" data-name="Plants">
+            <div class="content-box">
+                <h2 style="color: rgb(20, 136, 5);">Check Plants &nbsp; &nbsp;<span style="color: rgb(20, 136, 5);">Live
+                        Offer</span></h2>
+                <div class="image" style="background-image: url('Images/Plant.jpeg');"></div>
+                <a href="Hyperlink/plants.html"
+                    target="_blank">
+                    <button class="btn">See more</button></a>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- ***************** Laptop Banner ***************** -->
+
+    <div class="carousel-banner" id="all">
+        <img src="Images/banner1.jpg" alt="">
+    </div>
+
+
+    <!-- ***************** Laptop Carousel ***************** -->
+
+    <div class="main-carousel-container" data-name="Laptop Desktop" id="Laptop" style="display: flex;">
+        <!-- <div class="carousel-banner">
+            <img src="Images/Electronics-Page-Banner.jpg" alt="">
+        </div> -->
+
+
+        <div class="carousel-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="Images/laptop6.jpg" alt="Product 1">
+                    <h3>HP Laptops</h3>
+                    <p>New launches</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/laptop3.jpg" alt="Product 2">
+                    <h3>Asus Laptops</h3>
+                    <p>Up to 20% Off</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/laptop4.jpg" alt="Product 3">
+                    <h3>Acer Laptops</h3>
+                    <p>Up to 40% Off</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/laptop5.png" alt="Product 4">
+                    <h3>MSI Laptops</h3>
+                    <p>Sword Series</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/laptop8.jpg" alt="Product 5">
+                    <h3>Infinix Laptops</h3>
+                    <p>New Updates</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/laptop9.jpg" alt="Product 6">
+                    <h3>Samsung Laptops</h3>
+                    <p>Powered by Samsung</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/laptop7.jpeg" alt="Product 7">
+                    <h3>Mac Book</h3>
+                    <p>Powered by Apple</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/laptop2.jpg" alt="Product 8">
+                    <h3>Gaming Desktop</h3>
+                    <p>Most Powerful</p>
+                    <a href="Hyperlink/laptop.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+
+    <!-- ***************** Mobile Carousel ***************** -->
+
+    <div class="main-carousel-container" data-name="Mobile Tablet" id="Mobile" style="display: flex;">
+        <!-- <div class="carousel-banner">
+            <img src="Images/Electronics-Page-Banner.jpg" alt="">
+        </div> -->
+
+
+        <div class="carousel-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="Images/mobile2.jpg" alt="Product 1">
+                    <h3>Samsung Mobiles</h3>
+                    <p>New launches</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/mobile10.webp" alt="Product 2">
+                    <h3>Gaming Tablet</h3>
+                    <p>Powered by Asus</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/mobile3.webp" alt="Product 3">
+                    <h3>Iphones</h3>
+                    <p>Powered by Apple</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/mobile5.webp" alt="Product 4">
+                    <h3>OnePlus Mobiles</h3>
+                    <p>Up to 30% Off</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/mobile6.jpg" alt="Product 5">
+                    <h3>Gaming ROG</h3>
+                    <p>Powered by Asus</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/mobile7.webp" alt="Product 6">
+                    <h3>Oppo Mobiles</h3>
+                    <p>Up to 40% Off</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/mobile8.jpg" alt="Product 7">
+                    <h3>MotoRola Mobiles</h3>
+                    <p>Under Budget</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/mobile9.webp" alt="Product 8">
+                    <h3>Smart Tablets</h3>
+                    <p>Powered by Sumsung</p>
+                    <a href="Hyperlink/mobile.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+
+
+    <!-- ***************** Monitor/ HeadPhone/ Speaker Carousel ***************** -->
+
+    <div class="main-carousel-container" data-name="Monitor Headphone Speaker desktop" id="Electronics"
+        style="display: flex;">
+        <!-- <div class="carousel-banner">
+            <img src="Images/Electronics-Page-Banner.jpg" alt="">
+        </div> -->
+
+
+        <div class="carousel-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="Images/monitor4.jpg" alt="Product 1">
+                    <h3>Gaming Monitors</h3>
+                    <p>Powered by Sumsung</p>
+                    <a href="Hyperlink/monitor.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/headphone1.jpg" alt="Product 2">
+                    <h3>Gaming Headphones</h3>
+                    <p>Up to 30% Off</p>
+                    <a href="Hyperlink/headandspeaker.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/speaker1.webp" alt="Product 3">
+                    <h3>RGB Speakers</h3>
+                    <p>Best for gaming</p>
+                    <a href="Hyperlink/headandspeaker.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/monitor2.png" alt="Product 4">
+                    <h3>Desktop</h3>
+                    <p>Built now</p>
+                    <a href="Hyperlink/monitor.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/speaker2.jpeg" alt="Product 5">
+                    <h3>Speaker</h3>
+                    <p>Powered by JBL</p>
+                    <a href="Hyperlink/headandspeaker.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/headphone2.jpg" alt="Product 6">
+                    <h3>RGB Headphones</h3>
+                    <p>Up to 40% Off</p>
+                    <a href="Hyperlink/headandspeaker.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/monitor3.jpg" alt="Product 7">
+                    <h3>All in One PC</h3>
+                    <p>Under Budget</p>
+                    <a href="Hyperlink/monitor.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/Minitor.jpg" alt="Product 8">
+                    <h3>Smart Monitor</h3>
+                    <p>Powered by Asus</p>
+                    <a href="Hyperlink/monitor.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- ***************** Watch Carousel ***************** -->
+
+    <div class="main-carousel-container" data-name="watch wallclock smartwatcg alramclock" id="Watches"
+        style="display: flex;">
+        <!-- <div class="carousel-banner">
+            <img src="Images/Fashion_banner.jpg" alt="">
+        </div> -->
+
+
+        <div class="carousel-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="Images/watch1.avif" alt="Product 1">
+                    <h3>Smart Watch</h3>
+                    <p>Powered by Sumsung</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/watch3.avif" alt="Product 2">
+                    <h3>Classic Watch</h3>
+                    <p>Up to 30% Off</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/watch4.avif" alt="Product 3">
+                    <h3>Wall Clock</h3>
+                    <p>Decorate Your Home</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/watch5.avif" alt="Product 4">
+                    <h3>Alram Clock</h3>
+                    <p>Best for Morning</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/watch7.jpeg" alt="Product 5">
+                    <h3>Expensive Watch</h3>
+                    <p>Powered by Rolex</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/watch6.webp" alt="Product 6">
+                    <h3>Branded Watches</h3>
+                    <p>Up to 40% Off</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/watch8.webp" alt="Product 7">
+                    <h3>Fire-Boult</h3>
+                    <p>For Daily Uses</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/watch2.jpg" alt="Product 8">
+                    <h3>Classic Wall Clock</h3>
+                    <p>Designed Ajanta</p>
+                    <a href="Hyperlink/watch.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- ***************** Fashion Carousel ***************** -->
+
+    <div class="main-carousel-container"
+        data-name="fashion cloths tshirt shirt kurti men ladies pants shoes sandal chappal keto sneakers" id="Fashion"
+        style="display: flex;">
+        <!-- <div class="carousel-banner">
+            <img src="Images/Electronics-Page-Banner.jpg" alt="">
+        </div> -->
+
+
+        <div class="carousel-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="Images/fashion4.jpg" alt="Product 1">
+                    <h3>T - Shirt</h3>
+                    <p>Unique Design</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fashion2.webp" alt="Product 2">
+                    <h3>Jeans</h3>
+                    <p>Up to 30% Off</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fashion3.avif" alt="Product 3">
+                    <h3>Men Shirt</h3>
+                    <p>For Daily Uses</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fashion5.jpg" alt="Product 4">
+                    <h3>Kurties</h3>
+                    <p>Exclusive Collection</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fashion6.jpg" alt="Product 5">
+                    <h3>Blezers</h3>
+                    <p>Perfect for Wedding</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fashion1.jpg" alt="Product 6">
+                    <h3>Lehenga</h3>
+                    <p>For Wedding</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fashion7.webp" alt="Product 7">
+                    <h3>Shoes</h3>
+                    <p>Designed by Nykee</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/fashion8.webp" alt="Product 8">
+                    <h3>Sandal</h3>
+                    <p>Designed by Bata</p>
+                    <a href="Hyperlink/fashion.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- ***************** Gifts Carousel ***************** -->
+
+    <div class="main-carousel-container"
+        data-name="fashion cloths tshirt shirt kurti men ladies pants shoes sandal chappal keto sneakers" id="Gifts"
+        style="display: flex;">
+        <!-- <div class="carousel-banner">
+            <img src="Images/Electronics-Page-Banner.jpg" alt="">
+        </div> -->
+
+
+        <div class="carousel-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="Images/gift1.jpg" alt="Product 1">
+                    <h3>Special Gifts</h3>
+                    <p>For Special Person</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/gift2.webp" alt="Product 2">
+                    <h3>Gift Voucher</h3>
+                    <p>Up to 30% Off</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/gift3.jpg" alt="Product 3">
+                    <h3>Celebration Pack</h3>
+                    <p>From Dairy Milk</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/gift4.avif" alt="Product 4">
+                    <h3>Drones</h3>
+                    <p>Exclusive Gifts</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/gift5.avif" alt="Product 5">
+                    <h3>Robots</h3>
+                    <p>Perfect for Kids</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/gift6.avif" alt="Product 6">
+                    <h3>Expensive Ring</h3>
+                    <p>For Wedding</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/gift7.jpg" alt="Product 7">
+                    <h3>Bracelet</h3>
+                    <p>For Mens</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/gift8.jpg" alt="Product 8">
+                    <h3>Gift Pack</h3>
+                    <p>Best For Daily Uses</p>
+                    <a href="Hyperlink/gift.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- ***************** Plants Carousel ***************** -->
+
+    <div class="main-carousel-container"
+        data-name="fashion cloths tshirt shirt kurti men ladies pants shoes sandal chappal keto sneakers" id="Plants"
+        style="display: flex;">
+        <!-- <div class="carousel-banner">
+            <img src="Images/Electronics-Page-Banner.jpg" alt="">
+        </div> -->
+
+
+        <div class="carousel-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="Images/plant1.jpg" alt="Product 1">
+                    <h3>Mango Tree</h3>
+                    <p>Alphonso Species</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/plant2.jpg" alt="Product 2">
+                    <h3>Guava Tree</h3>
+                    <p>For Summer</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/plant3.webp" alt="Product 3">
+                    <h3>Grapes Tree</h3>
+                    <p>Black Grapes</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/plant4.jpg" alt="Product 4">
+                    <h3>Paper Flower</h3>
+                    <p>For All Season</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/plant5.jpg" alt="Product 5">
+                    <h3>Sun Flower</h3>
+                    <p>Giant Species</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/plant6.webp" alt="Product 6">
+                    <h3>Red Rose</h3>
+                    <p>Symbol of Love</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/plant7.jpg" alt="Product 7">
+                    <h3>Baby Trees</h3>
+                    <p>Decorate Your Garden</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/plant8.jpg" alt="Product 8">
+                    <h3>Giant Trees</h3>
+                    <p>For Make Forest</p>
+                    <a href="Hyperlink/plants.html" target="_blank"><button class="explore-btn">Explore More</button></a>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ********************* FOOTER ********************* -->
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-nav">
+                <div class="nav-column">
+                    <h4>Get to Know Us</h4>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Epic Mart</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Epic Mart Devices</a></li>
+                        <li><a href="#">Epic Mart Science</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <h4>Make Money with Us</h4>
+                    <ul>
+                        <li><a href="#">Sell on Epic Mart</a></li>
+                        <li><a href="#">Sell Your Services on Epic Mart</a></li>
+                        <li><a href="#">Sell on Epic Mart Business</a></li>
+                        <li><a href="#">Sell Your Apps on Epic Mart</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Advertise Your Products</a></li>
+                        <li><a href="#">Self-Publish with Us</a></li>
+                        <li><a href="#">Host an Epic Mart Hub</a></li>
+                        <li><a href="#">See More Make Money with Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <h4>Epic Mart Payment Products</h4>
+                    <ul>
+                        <li><a href="#">Epic Mart Rewards Visa Signature Cards</a></li>
+                        <li><a href="#">Epic Mart.com Store Card</a></li>
+                        <li><a href="#">Epic Mart Secured Card</a></li>
+                        <li><a href="#">Epic Mart Business Card</a></li>
+                        <li><a href="#">Epic Mart Business Line of Credit</a></li>
+                        <li><a href="#">Shop with Points</a></li>
+                        <li><a href="#">Credit Card Marketplace</a></li>
+                        <li><a href="#">Reload Your Balance</a></li>
+                        <li><a href="#">Epic Mart Currency Converter</a></li>
+                    </ul>
+                </div>
+                <div class="nav-column">
+                    <h4>Let Us Help You</h4>
+                    <ul>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Your Orders</a></li>
+                        <li><a href="#">Shipping Rates & Policies</a></li>
+                        <li><a href="#">Epic Mart Prime</a></li>
+                        <li><a href="#">Returns & Replacements</a></li>
+                        <li><a href="#">Manage Your Content and Devices</a></li>
+                        <li><a href="#">Epic Mart Assistant</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logoo">
+                <img src="Images/logo.jpg" alt="footer-Logo">
+                <span class="footer-bar-name">
+                    EpicMart</span>
+            </div>
+            <div class="row">
+                Don't Try To Copy &copy;
+            </div>
+            <div class="footer-logo">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="EpicMart.js"></script>
+
+
+
+</body>
+
+</html>

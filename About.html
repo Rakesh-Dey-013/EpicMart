@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epicmart - About Section</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, black, rgb(5, 0, 68))
+        }
+
+
+        .card-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card-list .card-item {
+            height: auto;
+            width: 350px;
+            color: #00ffa2;
+            user-select: none;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            backdrop-filter: blur(30px);
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            margin: 20px;
+        }
+
+        .card-list .card-item .user-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            border: 3px solid #009b62;
+            padding: 4px;
+        }
+
+        .card-list .card-item .user-profession {
+            font-size: 1.15rem;
+            color: #e3e3e3;
+            font-weight: 500;
+            margin: 14px 0 40px;
+            letter-spacing: 1px;
+        }
+
+        .user-name {
+            letter-spacing: 1px;
+        }
+
+        .card-list .card-item .message-button {
+            font-size: 1.25rem;
+            padding: 10px 35px;
+            color: #030728;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            background: #fff;
+            border: 1px solid transparent;
+            transition: 0.2s ease;
+        }
+
+        .card-list .card-item .message-button:hover {
+            background: #00ffa2;
+            border: 1px solid #fff;
+            color: black;
+        }
+
+        /* Media Queries */
+
+        @media (max-width: 768px) {
+            .card-list .card-item {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-list .card-item {
+                width: 100%;
+                margin: 20px 20px;
+            }
+
+            .card-list .card-item .user-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .card-list .card-item .message-button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-list">
+        <div class="card-item">
+            <img src="Images/Rakesh.jpg" alt="User Image" class="user-image">
+            <h2 class="user-name">Rakesh Kr. Dey</h2>
+            <p class="user-profession">Programmer</p>
+            <a href="https://wa.me/7063616775" target="_blank"><button class="message-button">Message</button></a>
+        </div>
+
+        <div class="card-item">
+            <img src="Images/Devasis.avif" alt="User Image" class="user-image">
+            <h2 class="user-name">Debasis Ruidas</h2>
+            <p class="user-profession">Programmer</p>
+            <a href="https://wa.me/8250458239" target="_blank"><button class="message-button">Message</button></a>
+        </div>
+    </div>
+
+
+    <script>
+        const userNameElements = document.querySelectorAll('.user-name');
+        const text1 = 'Rakesh Kr. Dey';
+        const text2 = 'Debasis Ruidas';
+        let index1 = 0;
+        let index2 = 0;
+        let isWriting1 = true;
+        let isWriting2 = true;
+
+        function autoType() {
+            userNameElements.forEach((element, i) => {
+                if (i === 0) {
+                    element.textContent = text1.substring(0, index1);
+                } else {
+                    element.textContent = text2.substring(0, index2);
+                }
+            });
+
+            if (isWriting1) {
+                if (index1 < text1.length) {
+                    index1++;
+                } else {
+                    isWriting1 = false;
+                }
+            } else {
+                if (index1 > 0) {
+                    index1--;
+                } else {
+                    isWriting1 = true;
+                }
+            }
+
+            if (isWriting2) {
+                if (index2 < text2.length) {
+                    index2++;
+                } else {
+                    isWriting2 = false;
+                }
+            } else {
+                if (index2 > 0) {
+                    index2--;
+                } else {
+                    isWriting2 = true;
+                }
+            }
+
+            setTimeout(autoType, 400);
+        }
+
+        autoType();
+    </script>
+</body>
+
+</html>
