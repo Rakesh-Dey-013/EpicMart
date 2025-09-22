@@ -23,12 +23,12 @@ Here are a few screenshots of the EpicMart interface:
   </tr>
   <tr>
     <td align="center">
-      <h3>Cart Page</h3>
+      <h3>Products Card</h3>
       <img src="https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20154007.png" width="400">
     </td>
     <td align="center">
-      <h3>Another Screenshot</h3>
-      <img src="https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20154007.png" width="400">
+      <h3>Product Items</h3>
+      <img src="https://github.com/Rakesh-Dey-013/EpicMart/blob/main/Preview/Screenshot%202025-09-22%20124947.png" width="400">
     </td>
   </tr>
 </table>
