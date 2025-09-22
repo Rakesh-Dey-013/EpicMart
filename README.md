@@ -10,14 +10,28 @@ EpicMart is a sleek and modern e-commerce website built using HTML, CSS, and Jav
 
 Here are a few screenshots of the EpicMart interface:
 
-### Home Page
-![Home Screenshot](https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20153140.png)
-
-### Product Listing
-![Products Screenshot](https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20153201.png)
-
-### Cart Page
-![Cart Screenshot](https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20154007.png)
+<table>
+  <tr>
+    <td align="center">
+      <h3>Home Page</h3>
+      <img src="https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20153140.png" width="400">
+    </td>
+    <td align="center">
+      <h3>Product Listing</h3>
+      <img src="https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20153201.png" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h3>Cart Page</h3>
+      <img src="https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20154007.png" width="400">
+    </td>
+    <td align="center">
+      <h3>Another Screenshot</h3>
+      <img src="https://raw.githubusercontent.com/Rakesh-Dey-013/EpicMart/main/Preview/Screenshot%202025-07-23%20154007.png" width="400">
+    </td>
+  </tr>
+</table>
 
 ---
 
